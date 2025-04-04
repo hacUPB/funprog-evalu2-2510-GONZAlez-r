@@ -1,0 +1,7 @@
+Nombre de la Variable-----Abreviación (si existe)---------Características Principales (rango, tipo de valor.)----------------Lenguajes
+Entero--------------------int, short, long, long long, byte-----------------Números enteros (sin decimales). Rango varía según el lenguaje y el tipo.---------C, Java, Python
+Punto Flotante------------float, double, long double------------------------Números con decimales. Precisión simple (float) o doble (double).-----------------C, Java, Python
+Carácter------------------char----------------------------------------------Carácter individual (letras, símbolos). Unicode en Java.--------------------------C, Java
+Cadena de Texto-----------String, str---------------------------------------Secuencia de caracteres. Inmutable en Java y Python.------------------------------Java, Python
+Booleano------------------boolean, bool	Valores ----------------------------verdadero (true, True) o falso (false, False).------------------------------------Java, Python
+
