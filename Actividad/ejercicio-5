@@ -1,0 +1,30 @@
+
+Texto 10 caracteres
+
+
+Un carácter  1 byte = 10caracteres= 10 bytes.
+2. Espacio Total por Registro
+
+Espacio total por cada registro
+4 bytes= entero
++ 4 bytes=flotante 
++ 1 byte=booleano 
++ 10 bytes 
+= 19 bytes.
+
+
+Número de Registros
+
+Tiempo 24 horas
+24 * 60 minutos = 1440 minutos.
+
+Registros por minuto: 60 segundos / 10 segundos = 6 registros por minuto.
+
+Registros totales: 1440 minutos * 6 registros/minuto = 8640 registros.
+
+
+
+Espacio Total Requerido
+Espacio total: 8640 registros * 19 bytes/registro = 164160 bytes.
+Para convertir a kilobytes (KB): 164160 bytes / 1024 bytes/KB ≈ 160,31 KB.
+Para convertir a megabytes (MB): 164160 bytes / (1024 * 1024) bytes/MB ≈ 0,16 MB.

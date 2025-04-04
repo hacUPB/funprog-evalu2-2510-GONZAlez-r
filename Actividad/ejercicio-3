@@ -1,0 +1,80 @@
+Números Enteros:
+
+C:
+int: Entero estándar.
+short: Entero corto.
+long: Entero largo.
+long long: Entero largo largo.
+
+Java:
+byte: Entero de 8 bits.
+short: Entero de 16 bits.
+int: Entero de 32 bits.
+long: Entero de 64 bits.
+
+Python:
+int: Entero de precisión arbitraria (no tiene un tamaño fijo).
+
+
+
+
+
+
+Números Decimales (Punto Flotante):
+
+
+C:
+float: Punto flotante de precisión simple.
+double: Punto flotante de precisión doble.
+long double: Punto flotante de precisión extendida.
+
+Java:
+float: Punto flotante de precisión simple.
+double: Punto flotante de precisión doble.
+
+Python:
+float: Punto flotante de precisión doble.
+
+
+
+
+
+Caracteres:
+
+
+C:
+char: Carácter individual..
+
+Java:
+char: Carácter Unicode de 16 bits.
+
+Python:
+No hay un tipo de dato "carácter" separado; los caracteres individuales se representan como cadenas de longitud 1.
+
+
+
+
+
+Cadenas de Texto:
+
+C:
+Cadenas representadas como arreglos de caracteres (char[]).
+
+Java:
+String: Clase para representar cadenas de texto.
+
+Python:
+str: Clase para representar cadenas de texto.
+
+
+
+Valores Booleanos:
+
+C:
+No hay un tipo booleano nativo; se utilizan enteros (0 para falso, cualquier otro valor para verdadero).
+
+Java:
+boolean: Representa valores verdadero (true) o falso (false).
+
+Python:
+bool: Representa valores verdadero (True) o falso (False). 

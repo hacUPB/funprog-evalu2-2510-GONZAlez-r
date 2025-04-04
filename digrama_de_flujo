@@ -1,0 +1,13 @@
+DIAGRAMA DE FLUJO
+
+ovalo (Inicio/Fin): Indica el inicio y fin del algoritmo.
+
+Rectángulo (Proceso): Representa una acción o operación a realizar.
+
+Rombo (Decisión): Representa una condición o decisión que genera bifurcaciones.
+
+Paralelogramo (Entrada/Salida): Muestra operaciones de entrada o salida de datos.
+
+Flechas (Flujo de Control): Indican la dirección del flujo del proceso.
+
+Círculo (Conector): Conecta partes del diagrama cuando es necesario.
