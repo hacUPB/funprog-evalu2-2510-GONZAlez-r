@@ -1,0 +1,173 @@
+
+pregunta 1 (¿Por qué crees que el pseudocódigo es útil antes de escribir un programa en C?)
+creo que el pseudocigo planta una base simple de la que el usuario puede guiarse para seguir
+con el lenguaje c el cual requiere una forma de exprecion mas comlpleja y directa 
+
+pregunta 2(¿Por qué es importante declarar el tipo de variable (int, float, etc.) antes de usarla en C?)
+Aun que el lenguaje c es complejo es util, gracias a que ayuda a mejorar la eficiencia de la organizacion
+y deteccion de errores, gracias los comandos precisos y directos, y debido a que este codigo
+es uno de los mas usados en progrmacion su eficiencia y accesibilidad es mejor
+
+pregunta 3(¿Por qué es importante comentar el código, aunque sea breve y conciso?)
+en el lenguje c se utilizan estas varibles tan simples pero presisas para ayudar en la claridad
+en la que el usuario pueda mejorar en la comprencion, pero gracias a que este es un lenguaje 
+de programacion tambien debe ser precicso en su forma de escribir 
+
+pregunta 4(Después de este tutorial, ¿qué puntos crees que deberías reforzar para sentirte más seguro al traducir pseudocódigo a C?)
+el punto mas dificil para mi en el lenguaje c o en casi todos los lenguajes de programacion seria 
+la comprencion del ingles para poder entender las instrucciones o comandos de las variables que se necesiten utilizar
+
+
+
+printf("RETO 1")
+
+
+int main() {
+    int x1, y1, x2, y2;
+    float diferencia_x, diferencia_y, distancia;
+
+    printf("Ingresa los datos deseados para X1: ");
+    scanf("%d", x1);
+
+    printf("Ingresa los datos deseados para X2: ");
+    scanf("%d", x2);
+
+    printf("Ingresa los datos deseados para Y1: ");
+    scanf("%d", y1);
+
+    printf("Ingresa los datos deseados para Y2: ");
+    scanf("%d", y2);
+
+    diferencia_x = x2 - x1;
+    diferencia_y = y2 - y1;
+    distancia = sqrt(pow(diferencia_x, 2) + pow(diferencia_y, 2));
+
+    printf("La distancia entre los dos puntos es: %f\n", distancia);
+
+    return 0;
+}
+
+
+printf("RETO 2")
+
+int main() {
+    float metros, pulgadas;
+
+    printf("Ingresa la cantidad de metros de tela que deseas pasar a pulgadas: ");
+    scanf("%f", metros);
+
+    pulgadas = metros * 39.3701;
+
+    printf("Las pulgadas de los metros ingresados son: %.2f\n", pulgadas);
+
+    return 0;
+}
+
+
+printf("Reto 3")
+
+
+int main() {
+    float cateto_a, cateto_b, hipotenusa;
+
+    printf("Ingrese el valor del cateto A: ");
+    scanf("%f", cateto_a);
+
+    printf("Ingrese el valor del cateto B: ");
+    scanf("%f", cateto_b);
+
+    hipotenusa = sqrt(pow(cateto_a, 2) + pow(cateto_b, 2));
+
+    printf("La hipotenusa es: %.2f\n", hipotenusa);
+
+    return 0;
+}
+
+
+printf("Reto 4")
+
+
+int main() {
+    int dia_nacimiento, mes_nacimiento, año_nacimiento;
+    int dia_actual, mes_actual, año_actual;
+    int edad;
+
+    printf("Ingrese el dia de nacimiento: ");
+    scanf("%d", dia_nacimiento);
+
+    printf("Ingrese el mes de nacimiento: ");
+    scanf("%d", mes_nacimiento);
+
+    printf("Ingrese el año de nacimiento: ");
+    scanf("%d", año_nacimiento);
+
+    printf("Ingrese el dia actual: ");
+    scanf("%d", dia_actual);
+
+    printf("Ingrese el mes actual: ");
+    scanf("%d", mes_actual);
+
+    printf("Ingrese el año actual: ");
+    scanf("%d", año_actual);
+
+    edad = año_actual - año_nacimiento;
+
+    if (mes_actual < mes_nacimiento || (mes_actual == mes_nacimiento && dia_actual < dia_nacimiento)) {
+        edad--;
+    }
+
+    if (dia_actual == dia_nacimiento && mes_actual == mes_nacimiento) {
+        printf("¡Feliz Cumpleaños!\n");
+    }
+
+    if (edad > 123) {
+        printf("Es muy posible que la persona no se encuentre en este mundo\n");
+    }
+
+    if (edad < 1) {
+        printf("Es muy posible que esta persona no haya nacido o es un bebe\n");
+    }
+
+    printf("La edad de la persona es: %d\n", edad);
+
+    return 0;
+}
+
+
+printf("Reto 5")
+
+int main() {
+    float horasTrabajadas, pagoPorHora, sueldoSemanal;
+    float horasExtrasDobles, horasExtrasTriples;
+
+    printf("Ingrese las horas trabajadas en la semana: ");
+    scanf("%f", horasTrabajadas);
+
+    printf("Ingrese el pago por hora: ");
+    scanf("%f", pagoPorHora);
+
+    if (horasTrabajadas > 50) {
+        printf("Error: No se permiten mas de 50 horas de trabajo.\n");
+    } else {
+        if (horasTrabajadas <= 40) {
+            sueldoSemanal = horasTrabajadas * pagoPorHora;
+        } else {
+            sueldoSemanal = 40 * pagoPorHora;
+
+            if (horasTrabajadas > 40) {
+                horasExtrasDobles = horasTrabajadas - 40;
+                sueldoSemanal += horasExtrasDobles * pagoPorHora * 2;
+            }
+
+            if (horasTrabajadas > 45) {
+                horasExtrasTriples = horasTrabajadas - 45;
+                sueldoSemanal += horasExtrasTriples * pagoPorHora * 3;
+            }
+        }
+
+        printf("El sueldo semanal del trabajador es: $%.2f\n", sueldoSemanal);
+    }
+
+    return 0;
+
+
